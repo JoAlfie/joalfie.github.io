@@ -3,12 +3,8 @@ import { useStaticQuery, graphql, Link } from "gatsby"
 import PropTypes from "prop-types"
 import { Helmet } from "react-helmet"
 import Container from "./container"
-
-const ListLink = props => (
-	<li className="nav__item">
-		<Link to={props.to}>{props.children}</Link>
-	</li>
-)
+import Nav from "./nav"
+import styles from "../styles/layout.less"
 
 const Layout = ({ metaTitle, metaDescription, children }) => {
 	const { site } = useStaticQuery(graphql`
@@ -17,6 +13,10 @@ const Layout = ({ metaTitle, metaDescription, children }) => {
 				siteMetadata {
 					title
 					description
+					menuLinks {
+						name
+						link
+					}
 				}
 			}
 		}
@@ -32,8 +32,14 @@ const Layout = ({ metaTitle, metaDescription, children }) => {
 				<title>{metaTitle}</title>
 				<meta name="description" content={description} />
 			</Helmet>
-			<header>
-				<Link to="/">{site.siteMetadata.title}</Link>
+			<header className="mainheader">
+				<Link className="mainheader__mainlink" to="/">
+					{site.siteMetadata.title}
+				</Link>
+
+				{site.siteMetadata.menuLinks.length && (
+					<Nav menuLinks={site.siteMetadata.menuLinks} />
+				)}
 			</header>
 			<main>{children}</main>
 		</Container>

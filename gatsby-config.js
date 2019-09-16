@@ -9,6 +9,10 @@ module.exports = {
 		title: "Jo Alfie",
 		description:
 			"I am a front-end turned full-stack developer based in Cardiff. I love learning new things, building cool stuff, and playing with swords.",
+		menuLinks: [
+			{ name: "About", link: "/about/" },
+			{ name: "Contact", link: "/contact/" },
+		],
 	},
 	plugins: [
 		`gatsby-plugin-less`,

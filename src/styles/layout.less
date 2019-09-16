@@ -1,0 +1,30 @@
+@import "_utilities";
+
+.mainheader {
+	display: flex;
+	width: 100%;
+
+	&__mainlink {
+		font-size: 150%;
+	}
+}
+
+.sitenav {
+	flex: 1;
+
+	&__list {
+		.nav-ul();
+		display: flex;
+		justify-content: flex-end;
+	}
+	&__item {
+		display: inline-block;
+	}
+
+	&__link {
+		padding-left: 1rem;
+		&--active {
+			text-decoration: underline;
+		}
+	}
+}

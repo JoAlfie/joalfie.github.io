@@ -4,10 +4,14 @@ exports[`Layout renders correctly with set description 1`] = `
 <div
   className="container"
 >
-  <header>
+  <header
+    className="mainheader"
+  >
     <a
+      className="mainheader__mainlink"
       href="/"
     />
+    0
   </header>
   <main>
     hello world
@@ -19,10 +23,14 @@ exports[`Layout renders correctly without set description 1`] = `
 <div
   className="container"
 >
-  <header>
+  <header
+    className="mainheader"
+  >
     <a
+      className="mainheader__mainlink"
       href="/"
     />
+    0
   </header>
   <main>
     hello world

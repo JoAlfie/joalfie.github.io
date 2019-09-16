@@ -10,6 +10,7 @@ useStaticQuery.mockImplementation(() => ({
 		siteMetadata: {
 			tite: `Site title`,
 			description: `Site meta description`,
+			menuLinks: [],
 		},
 	},
 }))
@@ -20,6 +21,7 @@ describe("Layout", () => {
 			siteMetadata: {
 				title: `Site title`,
 				description: `Site meta description`,
+				menuLinks: [],
 			},
 		}
 		const tree = renderer
@@ -39,6 +41,7 @@ describe("Layout", () => {
 			siteMetadata: {
 				title: `Site title`,
 				description: `Site meta description`,
+				menuLinks: [],
 			},
 		}
 		const tree = renderer
