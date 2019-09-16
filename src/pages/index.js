@@ -1,5 +1,6 @@
 import React from "react"
 import Layout from "../components/layout"
+import Link from "../components/link"
 
 export default () => (
 	<Layout metaTitle="Jo Alfie Wimborne" title="Hi, I'm Jo Alfie Wimborne">
@@ -33,26 +34,57 @@ export default () => (
 			<h3>Strong</h3>
 			<ul>
 				<li>Semantic HTML</li>
-				<li>CSS (including less & sass)</li>
-				<li>JQuery</li>
+				<li>
+					CSS (including <Link to="http://lesscss.org/">Less</Link> &{" "}
+					<Link to="https://sass-lang.com/">Sass</Link>)
+				</li>
+				<li>
+					<Link to="https://jquery.com/">JQuery</Link> (
+					<Link to="http://youmightnotneedjquery.com/">
+						but I'm trying to use it less!
+					</Link>
+					)
+				</li>
 				<li>Web accessibility</li>
 				<li>Googling how to do stuff I don't know</li>
 			</ul>
 			<h3>Medium</h3>
 			<ul>
-				<li>Git</li>
+				<li>
+					<Link to="https://git-scm.com/">Git</Link> version control
+				</li>
 				<li>Vanilla javascript (including ES6)</li>
-				<li>React Native</li>
-				<li>React</li>
-				<li>Symphony CMS</li>
-				<li>Gatsby</li>
-				<li>Pug</li>
+				<li>
+					<Link to="https://gulpjs.com/">Gulp</Link>
+				</li>
+				<li>
+					<Link to="https://facebook.github.io/react-native/">
+						React Native
+					</Link>
+				</li>
+				<li>
+					<Link to="https://reactjs.org/">React</Link>
+				</li>
+				<li>
+					<Link to="https://www.getsymphony.com/">Symphony CMS</Link>
+				</li>
+				<li>
+					<Link to="https://www.gatsbyjs.org/">Gatsby</Link>
+				</li>
+				<li>
+					<Link to="https://pugjs.org/api/getting-started.html">Pug</Link>
+				</li>
 				<li>Markdown</li>
 			</ul>
 			<h3>Getting there</h3>
 			<ul>
-				<li>Node.js & Express</li>
-				<li>Wordpress</li>
+				<li>
+					<Link to="https://nodejs.org/en/">Node.js</Link> &{" "}
+					<Link to="https://expressjs.com/">Express</Link>
+				</li>
+				<li>
+					<Link to="https://en-gb.wordpress.org/">Wordpress</Link>
+				</li>
 			</ul>
 		</section>
 		<section>
