@@ -4,7 +4,7 @@ import PropTypes from "prop-types"
 import { Helmet } from "react-helmet"
 import Container from "./container"
 import Nav from "./nav"
-import styles from "../styles/layout.less"
+import "../styles/layout.less"
 
 const Layout = ({ metaTitle, metaDescription, title, children }) => {
 	const { site } = useStaticQuery(graphql`
@@ -27,7 +27,7 @@ const Layout = ({ metaTitle, metaDescription, title, children }) => {
 		: site.siteMetadata.description
 
 	return (
-		<Container>
+		<>
 			<Helmet>
 				<title>{metaTitle}</title>
 				<meta name="description" content={description} />
@@ -41,11 +41,13 @@ const Layout = ({ metaTitle, metaDescription, title, children }) => {
 					<Nav menuLinks={site.siteMetadata.menuLinks} />
 				)}
 			</header>
-			<main>
-				<h1>{title}</h1>
-				{children}
-			</main>
-		</Container>
+			<Container>
+				<main>
+					<h1>{title}</h1>
+					{children}
+				</main>
+			</Container>
+		</>
 	)
 }
 
