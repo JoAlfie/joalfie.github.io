@@ -8,5 +8,5 @@ module.exports = {
 	siteMetadata: {
 		title: "Jo Alfie Wimborne",
 	},
-	plugins: [`gatsby-plugin-less`],
+	plugins: [`gatsby-plugin-less`, `gatsby-plugin-react-helmet`],
 }
