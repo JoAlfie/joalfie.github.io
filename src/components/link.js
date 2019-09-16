@@ -36,7 +36,7 @@ Link.propTypes = {
 	children: PropTypes.node.isRequired,
 	to: PropTypes.string.isRequired,
 	activeClassName: PropTypes.string,
-	partiallyActive: PropTypes.string,
+	partiallyActive: PropTypes.bool,
 }
 
 export default Link

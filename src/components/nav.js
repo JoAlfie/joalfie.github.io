@@ -10,6 +10,7 @@ const Nav = ({ menuLinks }) => (
 					<Link
 						className="sitenav__link"
 						activeClassName="sitenav__link--active"
+						partiallyActive={true}
 						to={link.link}
 					>
 						{link.name}
