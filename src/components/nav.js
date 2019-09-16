@@ -1,6 +1,6 @@
 import React from "react"
 import PropTypes from "prop-types"
-import { Link } from "gatsby"
+import Link from "./link"
 
 const Nav = ({ menuLinks }) => (
 	<nav className="sitenav">

@@ -1,0 +1,17 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Link renders Gatsby internal link correctly 1`] = `
+<a
+  href="/test"
+>
+  Gatsby link
+</a>
+`;
+
+exports[`Link renders external link correctly 1`] = `
+<a
+  href="https://google.com"
+>
+  Google link
+</a>
+`;
