@@ -9,13 +9,49 @@ useStaticQuery.mockImplementation(() => ({
 	site: {
 		siteMetadata: {
 			tite: `Site title`,
+			description: `Site meta description`,
 		},
 	},
 }))
 
 describe("Layout", () => {
-	it("renders correctly", () => {
-		const tree = renderer.create(<Layout>hello world</Layout>).toJSON()
+	it("renders correctly without set description", () => {
+		const site = {
+			siteMetadata: {
+				title: `Site title`,
+				description: `Site meta description`,
+			},
+		}
+		const tree = renderer
+			.create(
+				<Layout site={site} metaTitle="Hello world">
+					hello world
+				</Layout>
+			)
+			.toJSON()
+		expect(tree).toMatchSnapshot()
+	})
+})
+
+describe("Layout", () => {
+	it("renders correctly with set description", () => {
+		const site = {
+			siteMetadata: {
+				title: `Site title`,
+				description: `Site meta description`,
+			},
+		}
+		const tree = renderer
+			.create(
+				<Layout
+					site={site}
+					metaTitle="Hello world"
+					metaDescription="Set meta description"
+				>
+					hello world
+				</Layout>
+			)
+			.toJSON()
 		expect(tree).toMatchSnapshot()
 	})
 })

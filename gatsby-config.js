@@ -6,7 +6,9 @@
 
 module.exports = {
 	siteMetadata: {
-		title: "Jo Alfie Wimborne",
+		title: "Jo Alfie",
+		description:
+			"I am a front-end turned full-stack developer based in Cardiff. I love learning new things, building cool stuff, and playing with swords.",
 	},
 	plugins: [
 		`gatsby-plugin-less`,

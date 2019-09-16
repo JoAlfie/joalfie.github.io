@@ -1,6 +1,21 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Layout renders correctly 1`] = `
+exports[`Layout renders correctly with set description 1`] = `
+<div
+  className="container"
+>
+  <header>
+    <a
+      href="/"
+    />
+  </header>
+  <main>
+    hello world
+  </main>
+</div>
+`;
+
+exports[`Layout renders correctly without set description 1`] = `
 <div
   className="container"
 >
