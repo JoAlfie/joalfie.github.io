@@ -14,6 +14,9 @@ exports[`Layout renders correctly with set description 1`] = `
     0
   </header>
   <main>
+    <h1>
+      Test Title
+    </h1>
     hello world
   </main>
 </div>
@@ -33,6 +36,9 @@ exports[`Layout renders correctly without set description 1`] = `
     0
   </header>
   <main>
+    <h1>
+      Test Title
+    </h1>
     hello world
   </main>
 </div>

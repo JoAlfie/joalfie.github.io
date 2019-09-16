@@ -26,7 +26,7 @@ describe("Layout", () => {
 		}
 		const tree = renderer
 			.create(
-				<Layout site={site} metaTitle="Hello world">
+				<Layout site={site} metaTitle="Hello world" title="Test Title">
 					hello world
 				</Layout>
 			)
@@ -50,6 +50,7 @@ describe("Layout", () => {
 					site={site}
 					metaTitle="Hello world"
 					metaDescription="Set meta description"
+					title="Test Title"
 				>
 					hello world
 				</Layout>

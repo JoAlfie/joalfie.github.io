@@ -6,7 +6,7 @@ import Container from "./container"
 import Nav from "./nav"
 import styles from "../styles/layout.less"
 
-const Layout = ({ metaTitle, metaDescription, children }) => {
+const Layout = ({ metaTitle, metaDescription, title, children }) => {
 	const { site } = useStaticQuery(graphql`
 		query {
 			site {
@@ -41,7 +41,10 @@ const Layout = ({ metaTitle, metaDescription, children }) => {
 					<Nav menuLinks={site.siteMetadata.menuLinks} />
 				)}
 			</header>
-			<main>{children}</main>
+			<main>
+				<h1>{title}</h1>
+				{children}
+			</main>
 		</Container>
 	)
 }
@@ -49,6 +52,7 @@ const Layout = ({ metaTitle, metaDescription, children }) => {
 Layout.propTypes = {
 	metaTitle: PropTypes.string.isRequired,
 	metaDescription: PropTypes.string,
+	title: PropTypes.string.isRequired,
 	children: PropTypes.node,
 }
 
