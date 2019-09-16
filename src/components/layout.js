@@ -33,13 +33,15 @@ const Layout = ({ metaTitle, metaDescription, title, children }) => {
 				<meta name="description" content={description} />
 			</Helmet>
 			<header className="mainheader">
-				<Link className="mainheader__mainlink" to="/">
-					{site.siteMetadata.title}
-				</Link>
+				<div className="mainheader__inner">
+					<Link className="mainheader__mainlink" to="/">
+						{site.siteMetadata.title}
+					</Link>
 
-				{site.siteMetadata.menuLinks.length && (
-					<Nav menuLinks={site.siteMetadata.menuLinks} />
-				)}
+					{site.siteMetadata.menuLinks.length && (
+						<Nav menuLinks={site.siteMetadata.menuLinks} />
+					)}
+				</div>
 			</header>
 			<Container>
 				<main>
