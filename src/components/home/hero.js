@@ -3,6 +3,7 @@ import { useStaticQuery, graphql } from "gatsby"
 import Img from "gatsby-image"
 import Container from "../container"
 import Header from "../header"
+import ThemeSwitch from "../themeSwitch"
 import "../../styles/hero.less"
 
 const Hero = ({ data, heroTitle, heroText }) => {
@@ -31,6 +32,9 @@ const Hero = ({ data, heroTitle, heroText }) => {
 					<h1>{heroTitle}</h1>
 					{heroText}
 				</div>
+			</Container>
+			<Container>
+				<ThemeSwitch />
 			</Container>
 			<Header
 				homeLink={"JoAlfie"}
