@@ -1,0 +1,39 @@
+@import "_variables";
+
+.hero {
+	width: 100%;
+	min-height: 100vh;
+
+	.mainheader {
+		position: absolute;
+		bottom: 0;
+		&__mainlink {
+			display: none;
+		}
+	}
+}
+@media (min-width: @md) {
+	.hero {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+
+		.container {
+			display: flex;
+		}
+
+		&__image {
+			width: 50%;
+			margin-right: @gutter;
+		}
+		&__text {
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+
+			p {
+				font-size: 1.6rem;
+			}
+		}
+	}
+}
