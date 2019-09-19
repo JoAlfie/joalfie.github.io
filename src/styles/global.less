@@ -29,6 +29,15 @@ body {
 	font-weight: 400;
 	color: @mainfontcolor;
 	font-family: @mainfontfamily;
+
+	&.light-mode {
+		background-color: @lightgrey;
+		color: @mainfontcolor;
+	}
+	&.dark-mode {
+		background-color: @purplegrey;
+		color: @white;
+	}
 }
 
 @media (min-width: @sm) {
@@ -54,6 +63,14 @@ h6,
 	margin-top: 0;
 	margin-bottom: @text-margin-bottom;
 	font-family: @headerfontfamily;
+	letter-spacing: 0.8px;
+
+	.light-mode & {
+		color: @purplegrey;
+	}
+	.dark-mode & {
+		color: @teal;
+	}
 }
 h1,
 .h1 {
@@ -131,18 +148,24 @@ select,
 textarea {
 	border-radius: 0;
 	font-family: @mainfontfamily;
-	color: @mainfontcolor;
+	color: inherit;
 }
 button {
 	font-family: @mainfontfamily;
 }
 
 a {
-	color: @linkcolor;
 	font-weight: bold;
 	text-decoration: none;
 
 	img {
 		border: 0;
+	}
+
+	.light-mode & {
+		color: @linkcolor;
+	}
+	.dark-mode & {
+		color: @white;
 	}
 }

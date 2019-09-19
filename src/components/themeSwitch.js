@@ -1,5 +1,6 @@
 import React from "react"
 import useDarkMode from "use-dark-mode"
+import "../styles/themeswitch.less"
 
 const ThemeSwitch = props => {
 	const darkMode = useDarkMode(false)
@@ -10,8 +11,18 @@ const ThemeSwitch = props => {
 
 	return (
 		<div className="themeswitch">
-			<button onClick={handleLightPress}>☀</button>
-			<button onClick={handleDarkPress}>☾</button>
+			<button
+				className="themeswitch__button themeswitch__button--light"
+				onClick={handleLightPress}
+			>
+				☀
+			</button>
+			<button
+				className="themeswitch__button themeswitch__button--dark"
+				onClick={handleDarkPress}
+			>
+				☾
+			</button>
 		</div>
 	)
 }

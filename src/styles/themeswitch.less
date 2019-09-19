@@ -1,0 +1,36 @@
+@import "_variables";
+
+.themeswitch {
+	&__button {
+		width: 4rem;
+		height: 4rem;
+		border-radius: 50%;
+		background: transparent;
+		margin-right: 10px;
+
+		&:focus {
+			outline: none;
+			box-shadow: 0px 0px 9px 2px @teal;
+		}
+
+		.dark-mode & {
+			color: @white;
+			&--dark {
+				border: solid 2px @white;
+			}
+			&--light {
+				border: solid 2px @purplegrey;
+			}
+		}
+
+		.light-mode & {
+			color: @mainfontcolor;
+			&--dark {
+				border: solid 2px @lightgrey;
+			}
+			&--light {
+				border: solid 2px @mainfontcolor;
+			}
+		}
+	}
+}

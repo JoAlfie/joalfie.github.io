@@ -30,6 +30,7 @@
     "react-helmet": "^5.2.1",
     "typeface-open-sans": "0.0.75",
     "typeface-patua-one": "0.0.71",
+    "typeface-staatliches": "0.0.71",
     "use-dark-mode": "^2.3.1"
   },
   "devDependencies": {
