@@ -3,7 +3,7 @@ import useDarkMode from "use-dark-mode"
 import "../styles/themeswitch.less"
 
 const ThemeSwitch = props => {
-	const darkMode = useDarkMode(false)
+	const darkMode = useDarkMode(true)
 	const handleTheme = theme =>
 		theme === "dark" ? darkMode.enable() : darkMode.disable()
 	const handleLightPress = () => handleTheme("light")
