@@ -1,0 +1,36 @@
+@import "_variables";
+
+.project {
+	padding: 2rem;
+
+	&__link {
+		display: block;
+	}
+	&__linktext {
+		font-weight: 400;
+		margin-bottom: 0;
+	}
+}
+
+@media (min-width: @md) {
+	.projectlist {
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+	}
+	.project {
+		z-index: 0;
+		position: relative;
+		box-shadow: 0 0 0 1px darken(@lightgrey, 10%);
+		padding: 10px;
+		box-sizing: border-box;
+		transition: box-shadow 0.2s ease, transform 0.2s ease, z-index 0s 0.2s ease;
+		margin: 10px;
+
+		&:hover {
+			z-index: 1;
+			box-shadow: 0 8px 50px rgba(#000, 0.2);
+			transform: scale(1.05);
+			transition: box-shadow 0.2s ease, transform 0.2s ease, z-index 0s 0s ease;
+		}
+	}
+}
