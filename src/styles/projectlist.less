@@ -2,13 +2,29 @@
 
 .project {
 	padding: 2rem;
+	position: relative;
+	box-shadow: 0 0 0 1px darken(@lightgrey, 10%);
+	margin-bottom: 10px;
 
 	&__link {
-		display: block;
+		display: flex;
+		flex-wrap: wrap;
+		align-items: center;
+	}
+	&__image {
+		width: 100px;
+		height: 100px;
+		border-radius: 50%;
+		margin-right: 20px;
+	}
+	&__linktitle {
+		flex: 1;
+		margin-bottom: 0;
 	}
 	&__linktext {
 		font-weight: 400;
 		margin-bottom: 0;
+		margin-top: @text-margin-bottom;
 	}
 }
 
@@ -19,10 +35,6 @@
 	}
 	.project {
 		z-index: 0;
-		position: relative;
-		box-shadow: 0 0 0 1px darken(@lightgrey, 10%);
-		padding: 10px;
-		box-sizing: border-box;
 		transition: box-shadow 0.2s ease, transform 0.2s ease, z-index 0s 0.2s ease;
 		margin: 10px;
 

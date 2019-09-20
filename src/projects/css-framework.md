@@ -1,6 +1,10 @@
 ---
 title: "Simple CSS Framework"
 date: "2018-08-10"
+listImage: ./css-snip-small.png
+listImageAlt: "css code"
+featuredImage: ./css-snip.png
+featuredImageAlt: "css code"
 tech: ["CSS", "Less"]
 ---
 
