@@ -32,9 +32,12 @@ const Layout = ({
 	const description = metaDescription
 		? metaDescription
 		: site.siteMetadata.description
+	const mainElementClassName = mainClassName
+		? `site__main ${mainClassName}`
+		: `site__main`
 
 	return (
-		<>
+		<div className="site">
 			<Helmet>
 				<title>{metaTitle}</title>
 				<meta name="description" content={description} />
@@ -43,14 +46,14 @@ const Layout = ({
 				homeLink={site.siteMetadata.title}
 				menuLinks={site.siteMetadata.menuLinks}
 			/>
-			<Container>
-				<main className={mainClassName}>
+			<main className={mainElementClassName}>
+				<Container>
 					<h1>{title}</h1>
 					{children}
-				</main>
-			</Container>
+				</Container>
+			</main>
 			<Footer />
-		</>
+		</div>
 	)
 }
 
