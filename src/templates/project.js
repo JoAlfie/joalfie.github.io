@@ -31,7 +31,7 @@ export default ({ data }) => {
 				dangerouslySetInnerHTML={{ __html: project.html }}
 			/>
 
-			<footer>
+			<footer className="projectdetail__footer">
 				{/* TODO: Style footer */}
 				<Link to="/projects/">← Back to projects</Link>
 			</footer>
