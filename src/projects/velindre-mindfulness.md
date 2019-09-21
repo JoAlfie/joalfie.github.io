@@ -1,6 +1,10 @@
 ---
 title: "Velindre Mindfulness App"
 date: "2019-05-10"
+listImage: ./velindre-01.png
+listImageAlt: "Screenshots of the Velindre Mindfulness App"
+featuredImage: ./velindre-01.png
+featuredImageAlt: "Screenshots of the Velindre Mindfulness App"
 tech: ["React Native"]
 metaDescription: "A React Native app to serve a bilingual mindfulness relaxation programme"
 ---

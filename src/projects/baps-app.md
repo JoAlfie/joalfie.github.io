@@ -1,6 +1,10 @@
 ---
 title: "BAPS App"
 date: "2019-01-25"
+listImage: ./baps-01.png
+listImageAlt: "Screenshots of the BAPS app"
+featuredImage: ./baps-01.png
+featuredImageAlt: "Screenshots of the BAPS app"
 tech: ["React Native"]
 metaDescription: "A React Native app to help breast cancer patients regain movement after sugery"
 ---
