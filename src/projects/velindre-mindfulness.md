@@ -11,5 +11,5 @@ Using React Native allowed me to use a language I was familiar with (javascript)
 The app has had approximately 1000 downloads across both platforms.
 
 - [Velindre Press Release](http://www.velindre-tr.wales.nhs.uk/news/50986)
-- [Google Play Store](https://play.google.com/store/apps/details?id=com.velindrecc.mindfulness&hl=en_GB)
-- [Apple App Store](https://apps.apple.com/gb/app/velindre-mindfulness-app/id1450624693)
+- [On the Google Play Store](https://play.google.com/store/apps/details?id=com.velindrecc.mindfulness&hl=en_GB)
+- [On the Apple App Store](https://apps.apple.com/gb/app/velindre-mindfulness-app/id1450624693)

@@ -13,5 +13,5 @@ This was a very rewarding project to work on, being involved with both clinical 
 The project was nominated for Best New Mobile App in the Best Mobile App Awards in January 2019.
 
 - [Press release](http://www.thepracticeofhealth.wales.nhs.uk/news/50308)
-- [ Google Play Store](https://play.google.com/store/apps/details?id=com.velindre.baps&hl=en_GB)
-- [Apple App Store](https://apps.apple.com/gb/app/the-baps-app-wales/id1450394179)
+- [On the Google Play Store](https://play.google.com/store/apps/details?id=com.velindre.baps&hl=en_GB)
+- [On the Apple App Store](https://apps.apple.com/gb/app/the-baps-app-wales/id1450394179)
