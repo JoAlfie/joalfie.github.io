@@ -29,7 +29,7 @@ export default ({ data }) => {
 
 			<footer>
 				{/* TODO: Style footer */}
-				<Link to="/projects/">Back to projects</Link>
+				<Link to="/projects/">← Back to projects</Link>
 			</footer>
 		</Layout>
 	)
