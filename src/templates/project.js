@@ -3,6 +3,7 @@ import { graphql } from "gatsby"
 import Img from "gatsby-image"
 import Layout from "../components/layout"
 import Link from "../components/link"
+import TechList from "../components/techList"
 import "../styles/projectdetail.less"
 
 export default ({ data }) => {
@@ -21,7 +22,7 @@ export default ({ data }) => {
 					className="projectdetail__heroimage"
 				/>
 			)}
-
+			<TechList techList={project.frontmatter.tech} />
 			<div
 				className="projectdetail__copy"
 				dangerouslySetInnerHTML={{ __html: project.html }}

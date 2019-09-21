@@ -3,6 +3,7 @@ import { graphql } from "gatsby"
 import Img from "gatsby-image"
 import Layout from "../components/layout"
 import Link from "../components/link"
+import TechList from "../components/techList"
 import "../styles/projectlist.less"
 
 const Project = ({ project }) => {
@@ -20,15 +21,10 @@ const Project = ({ project }) => {
 					<div className="project__image project__image--placeholder" />
 				)}
 				<h2 className="project__linktitle">{project.frontmatter.title}</h2>
-				{project.frontmatter.tech && (
-					<ul className="project__linktext projecttech">
-						{project.frontmatter.tech.map((item, index) => (
-							<li key={index} className="projecttech__item">
-								{item}
-							</li>
-						))}
-					</ul>
-				)}
+				<TechList
+					wrapperClassName="project__linktext"
+					techList={project.frontmatter.tech}
+				/>
 			</Link>
 		</article>
 	)
