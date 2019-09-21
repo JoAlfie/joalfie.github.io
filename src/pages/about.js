@@ -28,6 +28,11 @@ export default () => (
 				strong team of colleagues which I can contribute to.
 			</p>
 			<p>
+				When I'm not at a computer I train and teach Historical European Martial
+				Arts at Edel Fencing Academy. I also compete from time to time, and have
+				won medals in Longsword and Sword & Buckler.
+			</p>
+			<p>
 				Email me:{" "}
 				<Link to={"mailto:jowimborne@gmail.com"}>jowimborne@gmail.com</Link>
 			</p>
