@@ -16,8 +16,19 @@ const Project = ({ project }) => {
 						className="project__image"
 					/>
 				)}
+				{!project.frontmatter.listImage && (
+					<div className="project__image project__image--placeholder" />
+				)}
 				<h2 className="project__linktitle">{project.frontmatter.title}</h2>
-				<p className="project__linktext">{project.excerpt}</p>
+				{project.frontmatter.tech && (
+					<ul className="project__linktext projecttech">
+						{project.frontmatter.tech.map((item, index) => (
+							<li key={index} className="projecttech__item">
+								{item}
+							</li>
+						))}
+					</ul>
+				)}
 			</Link>
 		</article>
 	)
@@ -63,11 +74,11 @@ export const query = graphql`
 							}
 						}
 						listImageAlt
+						tech
 					}
 					fields {
 						slug
 					}
-					excerpt
 				}
 			}
 		}

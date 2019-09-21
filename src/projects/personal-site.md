@@ -1,6 +1,10 @@
 ---
 title: "Personal site revamp"
 date: "2019-09-20"
+listImage: ./me-01.png
+listImageAlt: "cartoon illustration of Jo"
+featuredImage: ./site-snip.png
+featuredImageAlt: "split-colour screenshot of this website's homepage in dark and light mode"
 tech: ["Gatsby", "React", "Less"]
 ---
 

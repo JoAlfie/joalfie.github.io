@@ -1,12 +1,18 @@
 @import "_variables";
 
 .project {
-	padding: 2rem;
 	position: relative;
-	box-shadow: 0 0 0 1px darken(@lightgrey, 10%);
 	margin-bottom: 10px;
 
+	.light-mode & {
+		box-shadow: 0 0 0 1px darken(@lightgrey, 10%);
+	}
+	.dark-mode & {
+		box-shadow: 0 0 0 1px darken(@purplegrey, 5%);
+	}
+
 	&__link {
+		padding: 2rem;
 		display: flex;
 		flex-wrap: wrap;
 		align-items: center;
@@ -16,6 +22,9 @@
 		height: 100px;
 		border-radius: 50%;
 		margin-right: 20px;
+		&--placeholder {
+			background-color: @teal;
+		}
 	}
 	&__linktitle {
 		flex: 1;
@@ -25,6 +34,29 @@
 		font-weight: 400;
 		margin-bottom: 0;
 		margin-top: @text-margin-bottom;
+	}
+}
+
+.projecttech {
+	display: block;
+	list-style: none;
+	padding: 0;
+	width: 100%;
+
+	&__item {
+		display: inline-block;
+		font-size: 1.2rem;
+		padding: 3px 5px;
+		margin-left: 3px;
+		margin-right: 3px;
+		border-radius: 1px;
+
+		.light-mode & {
+			background-color: @purplegrey;
+		}
+		.dark-mode & {
+			background-color: @teal;
+		}
 	}
 }
 
@@ -38,11 +70,47 @@
 		transition: box-shadow 0.2s ease, transform 0.2s ease, z-index 0s 0.2s ease;
 		margin: 10px;
 
+		&::before {
+			content: "";
+			display: block;
+			padding-top: 80%;
+		}
+
+		&__link {
+			position: absolute;
+			top: 50%;
+			left: 0;
+			width: 100%;
+			transform: translate(0, -50%);
+		}
+
+		&__linktext {
+			margin: 0 0 -18px;
+			opacity: 0;
+			transition: margin 0.2s ease, opacity 0.2s ease;
+		}
+
 		&:hover {
 			z-index: 1;
 			box-shadow: 0 8px 50px rgba(#000, 0.2);
 			transform: scale(1.05);
 			transition: box-shadow 0.2s ease, transform 0.2s ease, z-index 0s 0s ease;
+
+			.project__linktext {
+				margin: 16px 0 0;
+				opacity: 1;
+			}
+		}
+		&:focus-within {
+			z-index: 1;
+			box-shadow: 0 8px 50px rgba(#000, 0.2);
+			transform: scale(1.05);
+			transition: box-shadow 0.2s ease, transform 0.2s ease, z-index 0s 0s ease;
+
+			.project__linktext {
+				margin: 16px 0 0;
+				opacity: 1;
+			}
 		}
 	}
 }

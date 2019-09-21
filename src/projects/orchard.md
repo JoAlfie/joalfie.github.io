@@ -1,7 +1,11 @@
 ---
 title: "Orchard Website"
 date: "2019-06-10"
-tech: ["Symphony CMS", "XSLT templating", "HTML", "CSS", "Javascript"]
+listImage: ./orchard-snip.png
+listImageAlt: "thinkorchard.com"
+featuredImage: ./orchard-snip.png
+featuredImageAlt: "thinkorchard.com"
+tech: ["Symphony", "XSLT", "CSS/Less", "Javascript"]
 ---
 
 As part of the Orchard Brand revamp / relaunch, the website was in need of a refresh. The idea was to use a clean, minimal look to let the work speak for itself, while also portraying the friendly, people-centric tone of the brand.
