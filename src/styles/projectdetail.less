@@ -1,0 +1,23 @@
+@import "_variables";
+
+.projectdetail {
+	position: relative;
+	width: 100%;
+
+	&__heroimage {
+		max-width: 80%;
+		margin-left: auto;
+		margin-bottom: @text-margin-bottom;
+	}
+	&__copy {
+		max-width: 80%;
+	}
+}
+
+@media (min-width: @md) {
+	.projectdetail {
+		&__heroimage {
+			margin-bottom: 3rem;
+		}
+	}
+}

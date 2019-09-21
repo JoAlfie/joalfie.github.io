@@ -1,7 +1,9 @@
 import React from "react"
 import { graphql } from "gatsby"
+import Img from "gatsby-image"
 import Layout from "../components/layout"
 import Link from "../components/link"
+import "../styles/projectdetail.less"
 
 export default ({ data }) => {
 	const project = data.markdownRemark
@@ -10,8 +12,21 @@ export default ({ data }) => {
 		<Layout
 			metaTitle={`${project.frontmatter.title} | Projects | Jo Alfie Wimborne`}
 			title={project.frontmatter.title}
+			mainClassName="projectdetail"
 		>
-			<article dangerouslySetInnerHTML={{ __html: project.html }} />
+			{project.frontmatter.featuredImage && (
+				<Img
+					fluid={project.frontmatter.featuredImage.childImageSharp.fluid}
+					alt={project.frontmatter.featuredImageAlt}
+					className="projectdetail__heroimage"
+				/>
+			)}
+
+			<div
+				className="projectdetail__copy"
+				dangerouslySetInnerHTML={{ __html: project.html }}
+			/>
+
 			<footer>
 				{/* TODO: Style footer */}
 				<Link to="/projects/">Back to projects</Link>
@@ -26,6 +41,15 @@ export const query = graphql`
 			html
 			frontmatter {
 				title
+				featuredImage {
+					childImageSharp {
+						fluid(maxWidth: 800) {
+							...GatsbyImageSharpFluid
+						}
+					}
+				}
+				featuredImageAlt
+				tech
 			}
 		}
 	}
