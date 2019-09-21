@@ -24,6 +24,10 @@ const Hero = ({ data, heroTitle, heroText }) => {
 
 	return (
 		<div className="hero">
+			<Header
+				homeLink={"JoAlfie"}
+				menuLinks={site.siteMetadata.menuLinks}
+			></Header>
 			<Container>
 				<div className="hero__image">
 					<Img fluid={data.file.childImageSharp.fluid} />
@@ -36,10 +40,6 @@ const Hero = ({ data, heroTitle, heroText }) => {
 			<Container>
 				<ThemeSwitch />
 			</Container>
-			<Header
-				homeLink={"JoAlfie"}
-				menuLinks={site.siteMetadata.menuLinks}
-			></Header>
 		</div>
 	)
 }
