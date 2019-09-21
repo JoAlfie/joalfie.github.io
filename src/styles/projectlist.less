@@ -16,6 +16,10 @@
 		display: flex;
 		flex-wrap: wrap;
 		align-items: center;
+		&:hover,
+		&:focus {
+			text-decoration: none;
+		}
 	}
 	&__image {
 		width: 100px;
@@ -106,7 +110,17 @@
 		&:hover {
 			.projectlist__hoverfocus();
 		}
+
 		&:focus-within {
+			a {
+				outline: none;
+			}
+			.dark-mode & {
+				border: solid 1px darken(@purplegrey, 20%);
+			}
+			.light-mode & {
+				border: solid 1px darken(@lightgrey, 20%);
+			}
 			.projectlist__hoverfocus();
 		}
 	}
