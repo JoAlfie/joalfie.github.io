@@ -40,7 +40,26 @@ module.exports = {
 				path: `${__dirname}/src/projects/`,
 			},
 		},
-		`gatsby-transformer-remark`,
+		{
+			resolve: `gatsby-plugin-catch-links`,
+			options: {
+				excludePattern: /(excluded-link|external)/,
+			},
+		},
+		{
+			resolve: `gatsby-transformer-remark`,
+			options: {
+				plugins: [
+					{
+						resolve: "gatsby-remark-external-links",
+						options: {
+							target: "_self",
+							rel: "nofollow",
+						},
+					},
+				],
+			},
+		},
 		{
 			resolve: `gatsby-plugin-use-dark-mode`,
 			options: {
