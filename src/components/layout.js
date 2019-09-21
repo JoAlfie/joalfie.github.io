@@ -1,5 +1,5 @@
 import React from "react"
-import { useStaticQuery, graphql, Link } from "gatsby"
+import { useStaticQuery, graphql } from "gatsby"
 import PropTypes from "prop-types"
 import { Helmet } from "react-helmet"
 import Container from "./container"
