@@ -1,5 +1,6 @@
 import React from "react"
 import Layout from "../components/layout"
+import Link from "../components/link"
 
 export default () => (
 	<Layout metaTitle="About | Jo Alfie Wimborne" title="About Me">
@@ -25,6 +26,10 @@ export default () => (
 				sharing this with other people. I enjoy a challenge and a working
 				experience which has something different every day, particularly with a
 				strong team of colleagues which I can contribute to.
+			</p>
+			<p>
+				Email me:{" "}
+				<Link to={"mailto:jowimborne@gmail.com"}>jowimborne@gmail.com</Link>
 			</p>
 		</section>
 	</Layout>
