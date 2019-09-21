@@ -3,7 +3,11 @@ import Layout from "../components/layout"
 import Link from "../components/link"
 
 export default () => (
-	<Layout metaTitle="About | Jo Alfie Wimborne" title="About Me">
+	<Layout
+		metaTitle="About | Jo Alfie Wimborne"
+		metaDescription="About Jo Alfie Wimborne: I am a front-end turned full-stack developer based in Cardiff. I love learning new things, building cool stuff, and playing with swords."
+		title="About Me"
+	>
 		<section className="about-section">
 			<h2>Hi, I'm Jo Alfie Wimborne</h2>
 			<p>

@@ -6,6 +6,7 @@ listImageAlt: "thinkorchard.com"
 featuredImage: ./orchard-snip.png
 featuredImageAlt: "thinkorchard.com"
 tech: ["Symphony", "XSLT", "CSS/Less", "Javascript"]
+metaDescription: "A Symphony CMS based website to match the Orchard Brand Refresh"
 ---
 
 As part of the Orchard Brand revamp / relaunch, the website was in need of a refresh. The idea was to use a clean, minimal look to let the work speak for itself, while also portraying the friendly, people-centric tone of the brand.

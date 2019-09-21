@@ -2,6 +2,7 @@
 title: "Velindre Mindfulness App"
 date: "2019-05-10"
 tech: ["React Native"]
+metaDescription: "A React Native app to serve a bilingual mindfulness relaxation programme"
 ---
 
 Velindre Cancer Centre wanted to offer a mindfulness and relaxation programme to help cancer patients, and also offer it to the public for anyone to use. The app provides audio playlists in both English and Welsh, as well as links to other useful resources.

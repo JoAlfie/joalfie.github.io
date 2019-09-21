@@ -6,6 +6,7 @@ listImageAlt: "cartoon illustration of Jo"
 featuredImage: ./site-snip.png
 featuredImageAlt: "split-colour screenshot of this website's homepage in dark and light mode"
 tech: ["Gatsby", "React", "Less"]
+metaDescription: "A Gatsby site to showcase my work"
 ---
 
 My [old portfolio site](http://joalfiedesign.uk) was incredibly outdated - I hadn't touched it since I graduated in 2017. It is still very design-focused, and my website-building skills have improved a lot since then!

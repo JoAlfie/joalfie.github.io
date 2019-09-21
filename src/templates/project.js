@@ -12,6 +12,7 @@ export default ({ data }) => {
 	return (
 		<Layout
 			metaTitle={`${project.frontmatter.title} | Projects | Jo Alfie Wimborne`}
+			metaDescription={project.frontmatter.metaDescription}
 			title={project.frontmatter.title}
 			mainClassName="projectdetail"
 		>
@@ -32,7 +33,6 @@ export default ({ data }) => {
 			/>
 
 			<footer className="projectdetail__footer">
-				{/* TODO: Style footer */}
 				<Link to="/projects/">← Back to projects</Link>
 			</footer>
 		</Layout>
@@ -54,6 +54,7 @@ export const query = graphql`
 				}
 				featuredImageAlt
 				tech
+				metaDescription
 			}
 		}
 	}

@@ -6,6 +6,7 @@ listImageAlt: "css code"
 featuredImage: ./css-snip.png
 featuredImageAlt: "css code"
 tech: ["CSS", "Less"]
+metaDescription: "A simple flexbox-based framework written in Less"
 ---
 
 After working on a few projects with the Orchard team I knew two things: Bootstrap had far too much code for what we needed, and Flexbox Grid had too many bugs for my liking.

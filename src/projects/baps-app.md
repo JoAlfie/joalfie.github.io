@@ -2,6 +2,7 @@
 title: "BAPS App"
 date: "2019-01-25"
 tech: ["React Native"]
+metaDescription: "A React Native app to help breast cancer patients regain movement after sugery"
 ---
 
 Breast cancer professionals in South Wales had noted large delays in patients getting radiotherapy treatment, due to restricted movement after surgery. They wanted to improve the post-operative experience for patients, and standardise the information and advice given to them.
