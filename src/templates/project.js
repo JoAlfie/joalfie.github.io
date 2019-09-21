@@ -22,7 +22,10 @@ export default ({ data }) => {
 					className="projectdetail__heroimage"
 				/>
 			)}
-			<TechList techList={project.frontmatter.tech} />
+			<TechList
+				wrapperClassName="projectdetail__techlist"
+				techList={project.frontmatter.tech}
+			/>
 			<div
 				className="projectdetail__copy"
 				dangerouslySetInnerHTML={{ __html: project.html }}

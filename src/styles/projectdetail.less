@@ -4,25 +4,41 @@
 	position: relative;
 	width: 100%;
 
-	&__heroimage {
+	&__heroimage,
+	&__techlist,
+	&__copy {
 		max-width: 90%;
+	}
+
+	&__heroimage {
 		margin-left: auto;
 		margin-bottom: @text-margin-bottom;
 		box-shadow: 0 8px 50px rgba(#000, 0.2);
 	}
+	&__techlist {
+		text-align: right;
+		margin-left: auto;
+	}
 	&__copy {
-		max-width: 90%;
+		ul {
+			list-style-type: circle;
+		}
 	}
 }
 
 @media (min-width: @md) {
 	.projectdetail {
-		&__heroimage {
-			margin-bottom: 3rem;
-			max-width: 80%;
-		}
+		&__heroimage,
+		&__techlist,
 		&__copy {
 			max-width: 80%;
+		}
+
+		&__heroimage {
+			margin-bottom: 3rem;
+		}
+		&__techlist {
+			margin-bottom: 3rem;
 		}
 	}
 }
