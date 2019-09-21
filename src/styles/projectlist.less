@@ -61,6 +61,18 @@
 	}
 }
 
+.projectlist__hoverfocus {
+	z-index: 1;
+	box-shadow: 0 8px 50px rgba(#000, 0.2);
+	transform: scale(1.05);
+	transition: box-shadow 0.2s ease, transform 0.2s ease, z-index 0s 0s ease;
+
+	.project__linktext {
+		margin: 16px 0 0;
+		opacity: 1;
+	}
+}
+
 @media (min-width: @md) {
 	.projectlist {
 		display: grid;
@@ -92,26 +104,10 @@
 		}
 
 		&:hover {
-			z-index: 1;
-			box-shadow: 0 8px 50px rgba(#000, 0.2);
-			transform: scale(1.05);
-			transition: box-shadow 0.2s ease, transform 0.2s ease, z-index 0s 0s ease;
-
-			.project__linktext {
-				margin: 16px 0 0;
-				opacity: 1;
-			}
+			.projectlist__hoverfocus();
 		}
 		&:focus-within {
-			z-index: 1;
-			box-shadow: 0 8px 50px rgba(#000, 0.2);
-			transform: scale(1.05);
-			transition: box-shadow 0.2s ease, transform 0.2s ease, z-index 0s 0s ease;
-
-			.project__linktext {
-				margin: 16px 0 0;
-				opacity: 1;
-			}
+			.projectlist__hoverfocus();
 		}
 	}
 }
