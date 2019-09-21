@@ -1,0 +1,24 @@
+@import "_variables";
+
+.mainfooter {
+	width: 100%;
+	max-width: 1200px;
+	margin: 0 auto;
+	padding: 2rem 3rem;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: center;
+
+	&__copyright {
+		padding-top: @text-margin-bottom;
+	}
+}
+@media (min-width: @md) {
+	.mainfooter {
+		flex-direction: row;
+		&__copyright {
+			padding: 0;
+		}
+	}
+}

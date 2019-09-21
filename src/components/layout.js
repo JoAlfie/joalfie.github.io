@@ -3,7 +3,8 @@ import { useStaticQuery, graphql, Link } from "gatsby"
 import PropTypes from "prop-types"
 import { Helmet } from "react-helmet"
 import Container from "./container"
-import Nav from "./nav"
+import Header from "./header"
+import Footer from "./footer"
 import "../styles/layout.less"
 
 const Layout = ({
@@ -38,23 +39,17 @@ const Layout = ({
 				<title>{metaTitle}</title>
 				<meta name="description" content={description} />
 			</Helmet>
-			<header className="mainheader">
-				<div className="mainheader__inner">
-					<Link className="mainheader__mainlink" to="/">
-						{site.siteMetadata.title}
-					</Link>
-
-					{site.siteMetadata.menuLinks.length && (
-						<Nav menuLinks={site.siteMetadata.menuLinks} />
-					)}
-				</div>
-			</header>
+			<Header
+				homeLink={site.siteMetadata.title}
+				menuLinks={site.siteMetadata.menuLinks}
+			/>
 			<Container>
 				<main className={mainClassName}>
 					<h1>{title}</h1>
 					{children}
 				</main>
 			</Container>
+			<Footer />
 		</>
 	)
 }
