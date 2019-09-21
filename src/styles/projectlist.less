@@ -16,14 +16,15 @@
 		display: flex;
 		flex-wrap: wrap;
 		align-items: center;
+		justify-content: center;
 		&:hover,
 		&:focus {
 			text-decoration: none;
 		}
 	}
 	&__image {
-		width: 100px;
-		height: 100px;
+		width: 99px;
+		height: 99px;
 		border-radius: 50%;
 		margin-right: 20px;
 		&--placeholder {
@@ -66,7 +67,7 @@
 		&::before {
 			content: "";
 			display: block;
-			padding-top: 80%;
+			padding-top: 70%;
 		}
 
 		&__link {
@@ -75,6 +76,7 @@
 			left: 0;
 			width: 100%;
 			transform: translate(0, -50%);
+			height: 100%;
 		}
 
 		&__linktext {
