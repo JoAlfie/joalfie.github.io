@@ -1,0 +1,2 @@
+(window.webpackJsonp=window.webpackJsonp||[]).push([[4],{232:function(t,e,n){"use strict";n.r(e);var o=n(0),a=n.n(o),c=n(226);e.default=function(){return a.a.createElement(c.a,{metaTitle:"Contact | Jo Alfie Wimborne",title:"Contact"},"Hello contact")}}}]);
+//# sourceMappingURL=component---src-pages-contact-js-84029ab568759e06e041.js.map
